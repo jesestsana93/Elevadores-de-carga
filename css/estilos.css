@@ -1,0 +1,55 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: black;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: 'Helvetica';
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	min-height: 730px;
+	position: relative;
+}
+a:active, a:hover{
+	text-decoration: none !important;
+	color: white !important;
+}
+.dropdown-item:active {
+    background-color:#93C90E !important;
+}
+.navbar{	
+	margin-bottom: 0px;
+}
+
+.float{
+	float: left;
+}
+.mobile{
+	display: none;
+}
+.btn{
+	cursor: pointer;
+}
+.tamIconos{
+	width: 90px;
+	height: 90px;
+}
+.tamC3{
+	
+	margin-left: 20px;	
+}
+.blanco{
+	color: white;
+}
+.rojo{
+	color: red;
+}
+.bg-2{
+	background-color: #A57F60;
+}
+
