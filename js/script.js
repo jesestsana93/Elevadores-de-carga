@@ -61,7 +61,7 @@ function menu(){
 		<div class="cont">
 			<div class="col-4 float p-0">
 				<a href="index.html">
-					<img src="`+pathImg+`image/logos/logo_elevadores.png" alt="logoElevadores" class="image-responsive2">
+					<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores" class="">
 				</a>				
 			</div>
 			<div class="col-8 float p-0">
@@ -106,20 +106,24 @@ function footer(){
 	$('footer').append(`
 		<div class="container foot">
 			<div class="row">
-               
+               	
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <br><br>
                     	<h3 class="col-xs-12 col-md-12 blanco">DÓNDE ESTAMOS<hr color="blanco" width="60em"></h3>
-                        <p class="col-xs-12 col-md-12 blanco">Nos encontramos en el centro de la Ciudad de México y damos servicio a toda la República Mexicana.</p>                        
+                        <p class="col-xs-12 col-md-12 blanco">Nos encontramos en el centro de la Ciudad de México <br> y damos servicio a toda la República Mexicana.</p>                        
                         
-
-                        <p class="col-xs-12 col-md-12 blanco">+(55) 57 61 53 90  <br>
-                        +(55) 55 88 56 74 </p>
+						<center>
+                        	<p class="col-xs-12 col-md-12 blanco">+(55) 57 61 53 90  <br>
+                        	+(55) 55 88 56 74 </p>
+                        </center>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6  col-lg-6">
-                        <button class="btn btn-danger ">Solicita tu cotización</button> <br>
-                        <a href="mailto:elevadoresdecarga@gmail.com" class="blanco" target="_blank">
-                        <img src="image/trans-mail.png" alt="correo">elevadoresdecarga@gmail.com</a>
-                        
+                    <br><br>
+                    	<center>
+                        	<a href="mailto:elevadoresdecarga@gmail.com" class="blanco" target="_blank"><button class="btn btn-danger" style='width:150px; height:35px'>Solicita tu cotización</button> <br>
+                        	 <br>
+                        	<img src="image/trans-mail.png" alt="correo">elevadoresdecarga@gmail.com</a>
+                        </center>
                     </div>
                 </div>
 
