@@ -22,10 +22,106 @@ a:active, a:hover{
 .dropdown-item:active {
     background-color:#93C90E !important;
 }
-.navbar{	
-	margin-bottom: 0px;
+header{
+  width: 100%;
+  background-color: #b81e2d;
+  height: 74px;
+  position: fixed;
+  z-index: 999;
+}
+header div{
+  height: 100%;
+}
+header div img{
+  height: 100%;
+  padding: 20px;
+}
+header div nav{
+  padding-top: 48px;
+  float: right;
+}
+header div nav a{
+	font-size: 18px;
+	color: white;
+	padding-left: 9px;
+}
+.open-submenu:hover ul.submenu{
+	display: block;
+    top: -24px;
+    left: calc(100% - 1px);
+}
+.open-submenu:hover ul.submenu.left{
+	display: block;
+    top: -2px;
+    left: -182px;
+}
+h1{
+	font-size: 24px;
+}
+.cont{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	position: relative;
+}
+.center-cont{
+	height: 100%;
+	display: table;
+}
+.center-elem{
+	display: table-cell;
+	vertical-align: middle;
+}
+.top{
+	position: relative;
+	top: 70px;
+}
+/*Banner*/
+#banner{
+	width: 100%;
+	height: 321px;
+	position: relative;
+	margin-bottom: 50px;
+}
+#banner .arrows{
+    padding: 0 15px;
+}
+#banner .arrows .next{
+    position: absolute;
+    top: 100px;
+	right: 15px;
+	height: 70px;
+	z-index: 9;
+}
+#banner .arrows .prev{
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Come, Safari, Opera */
+    transform: rotate(180deg);
+    height: 70px;
+    position: absolute;
+    top: 100px;
+	left: 15px;
+	z-index: 9;
+}
+#banner .arrows img{
+	visibility: hidden;
+	cursor: pointer;
+}
+.sliderBanner{
+	width: 100%;
+	height: 100%;
 }
 
+.cel{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15pt;
+}
+.m-b-20{
+	margin-bottom: 20px;
+}
 .float{
 	float: left;
 }
@@ -35,21 +131,96 @@ a:active, a:hover{
 .btn{
 	cursor: pointer;
 }
-.tamIconos{
-	width: 90px;
-	height: 90px;
+#vincularse{
+	width: 100%;
+	padding-top:5px;
 }
-.tamC3{
-	
-	margin-left: 20px;	
+#vincularse .title{
+	height: auto;
+	width: 100%;
+	margin-bottom: 30px;
+}
+#vincularse .title img{
+	width: 100%;
+}
+#vincularse .title p{
+	color: white;
+}
+.contVY{
+	height: 306px;
+	width: 100%;
+	background: url('../image/nosotros.gif');
+	background-size: cover;
+	margin-bottom: 30px;
+}
+#vincularse .videoVinc{
+	height: 237px;
+	/*background: #00a99d;*/
+	width: 49%;
+	float: left;
+}
+#vincularse .videoVinc iframe{
+	width: 100%;
+	height: 237px;
+}
+#vincularse .ifovideoY{
+	width: 48%;
+	height: 306px;
+	float: left;
+}
+.table{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.cel{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15pt;
+}
+
+.image-responsive{
+	width: 100%;
+}
+.image-responsive2{
+	width: 100%;
+	height: 80% !important;	
+}
+.tamIconos{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.tamC{	
+	margin-left:30px;	
+}
+.tamS{
+	width: 727px;
 }
 .blanco{
 	color: white;
 }
 .rojo{
-	color: red;
+	color:#b81e2d;
 }
-.bg-2{
-	background-color: #A57F60;
+.negro{
+	color: black;
 }
-
+.gris{
+	color: #313332;
+}
+p{
+	font-size: 12pt;
+}
+.tamh{
+	font-size: 14pt;
+}
+.footerElevadores{
+	margin-top: 150px;
+	/*height:323px;*/
+	width:100%;
+	background-color: #313332;
+	font-size: 12pt;
+}

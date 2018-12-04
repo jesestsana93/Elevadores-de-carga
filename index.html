@@ -1,158 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Elevadores de carga</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
-</head>
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Elevadores de carga</title>
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/estilos.css">
 
-<body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header rojo">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/popper.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><b class="blanco">EMPRESA</b></a></li>
-                <li><a href="#"><b class="blanco">PRODUCTOS</b></a></li>
-                <li><a href="#"><b class="blanco">SERVICIOS</b></a></li>
-                <li><a href="#"><b class="blanco">CLIENTES</b></a></li>
-                <li><a href="#"><b class="blanco">CONTACTO</b></a></li>
-            </ul>
+    <body>
+        <header>
+
+        </header>
+
+        <div id="header-mobile" class="mobile">
+
         </div>
-      </div>
-    </nav>
     
-    <div class="cont top">
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <center>
-                    <a href="#"><img src="image/iconos/productos.gif" alt="" class="tamIconos">
-                    <h5 class="rojo">PRODUCTOS</h5></a>
-                </center>
+        <div class="cont top">
+            <div id="menu-mobile" class="mobile">
             </div>
 
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <center>
-                    <a href="#"><img src="image/iconos/servicios.gif" alt="" class="tamIconos">
-                    <h5 class="rojo">SERVICIOS</h5></a>
-                </center>
-            </div>
+            <div class="cont">
+                <!--BANNER-->
+                <div class="col-sm-12 col-md-12 col-xl-12 p-0">
 
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <center>
-                    <a href="#"><img src="image/iconos/informes.gif" alt="" class="tamIconos">
-                    <h5 class="rojo">INFORMES</h5></a>
-                </center>
-            </div>
-        </div>
+                    <div id="banner">
+                        <!--div class="arrows">
+                            <img class="prev" src="image/arrow.png" alt="previa" onClick="gtag('event', 'index', { 'event_category': 'banner', 'event_action':'click', 'event_label':'anterior'});">
+                        </div>
+                        <div class="arrows">
+                            <img class="next" src="image/arrow.png" alt="siguiente" onClick="gtag('event', 'index', { 'event_category': 'banner', 'event_action':'click','event_label':'siguiente'});">
+                        </div-->
+                        <div class="hidden-arrows" style="display: none;"></div>
+                        <div class="sliderBanner">
+                            <div class=" slider">
+                                <img src="image/elevador.png" alt="elevador" class="image-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <br><br>
 
-      
+                <!--PRODUCTOS, SERVICIOS E INFORMES -->
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <center>
+                            <a href="#"><img src="image/iconos/productos.gif" alt="productos" class="tamIconos">
+                            <b><p class="rojo">PRODUCTOS</p></b></a>
+                            <p>Nuestros equipos son <br>hidráulicos o de tracción,<br> con puertas automáticas o <br>manuales, una o varias <br> salidas.</p>                
+                        </center>
+                    </div>
 
-        <div class="row">
-            <h1 class="rojo">OFRECEMOS Y DAMOS SERVICIOS A ELEVADORES</h1>
-            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                <center>
-                    <a href="#"><img src="image/iconos/residenciales.gif" alt="" class="tamIconos">
-                    <h5 class="rojo">RESIDENCIALES</h5></a>
-                </center>
-            </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <center>
+                            <a href="#"><img src="image/iconos/servicios.gif" alt="servicios" class="tamIconos">
+                            <b><p class="rojo">SERVICIOS</p></b></a>
+                            <p>Ofrecemos los servicios de: <br> instalación, mantenimiento, <br> modernización, reparación <br> y desmontaje.</p>
+                        </center>
+                    </div>
 
-            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                <center>
-                    <a href="#"><img src="image/iconos/comerciales.gif" alt="" class="tamIconos">
-                    <h5 class="rojo">COMERCIALES</h5></a>
-                </center>
-            </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <center>
+                            <a href="#"><img src="image/iconos/informes.gif" alt="informes" class="tamIconos">
+                            <b><p class="rojo">INFORMES</p></b></a>
+                            <p>Comuníquese con nosotros <br> y con gusto lo asesoramos <br> a encontrar la solución a <br> sus necesidades y <br>presupuesto.</p>
+                        </center>
+                    </div>
+                </div>   
 
-            <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
-                <center>
-                    <a href="#"><img src="image/iconos/industriales.gif" alt="" class="tamIconos">
-                    <h5 class="rojo">INDUSTRIALES</h5></a>
-                </center>
-            </div>
-            
-
-            <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
-                <center>
-                    <a href="team.html"><img src="image/iconos/salud.gif" alt="" class="tamIconos">
-                    <h5 class="rojo">SERVICIOS DE SALUD</h5></a>
-                </center>
-            </div>
-        </div>
-
-        <div class="row">
-            <h1 class="rojo">ALGUNOS DE NUESTROS CLIENTES</h1>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <center>              
-                    <a href="https://www.unam.mx/" target="_blank">
-                        <img src="image/logos/unam.jpg" alt="unam" class="tamC3" >
-                    </a>               
-               
-                    <a href="https://www.televisa.com/" target="_blank">
-                        <img src="image/logos/Televisa.jpg" alt="televisa" class="tamC3" >
-                    </a>
-                    
-
-                    <a href="http://www.tvazteca.com/" target="_blank">
-                        <img src="image/logos/tvazteca.jpg" alt="tv azteca" class="tamC3" >
-                    </a>
+                <!--SERVICIOS --> 
+                <div class="row">
+                    <div class="col-md-12">
                 
-                    <a href="https://www.fiestainn.com/" target="_blank">
-                        <img src="image/logos/fiesta.jpg" alt="fiestainn" class="tamC3" >
-                    </a>
-
-                    <a href="https://sheraton.marriott.com/" target="_blank">
-                        <img src="image/logos/sheraton.jpg" alt="sheraton" class="tamC3" >
-                    </a>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h4>INSTALACIÓN</h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4>MANTENIMIENTO</h4></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> <br>
+                                <img src="image/servicios.gif" alt="" class="tamS">
+                                <p class="col-md-12 col-xs-12 blanco">Fabricamos, importamos e instalamos los equipos que más se adecuen a sus necesidades de transporte vertical de personas o mercancías.</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--OFRECEMOS -->  
                 
-                    <a href="https://www.mcdonalds.com.mx/" target="_blank">
-                        <img src="image/logos/McDonalds.jpg" alt="McDonalds" class="tamC3" >
-                    </a>
-              
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <b><p class="rojo tamh">OFRECEMOS Y DAMOS SERVICIOS A ELEVADORES</p></b> <br>
+                    </div>
 
-                    <a href="https://www.pizzahut.com.mx/" target="_blank">
-                        <img src="image/logos/pizza.jpg" alt="pizza" class="tamC3" >
-                    </a>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                        <center>
+                            <a href="#"><img src="image/iconos/residenciales.gif" alt="residenciales" class="tamIconos">
+                            <b><p class="rojo">RESIDENCIALES</p></b></a>
+                            <p>PERSONAS CON <br> MOVILIDAD REDUCIDA</p>
+                        </center>
+                    </div>
 
-                    <a href="https://gillette.com.mx/es-mx" target="_blank">
-                        <img src="image/logos/gillete.jpg" alt="gillete" class="tamC3" >
-                    </a>
-                </center>  
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                        <center>
+                            <a href="#"><img src="image/iconos/comerciales.gif" alt="comerciales" class="tamIconos">
+                            <b><p class="rojo">COMERCIALES</p></b></a>
+                            <p>ELEVADORES DE BANDA <br>
+                                RESTAURANTES <br>
+                                BIBLIOTECAS <br>
+                                PLATAFORMAS</p>
+                        </center>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                        <center>
+                            <a href="#"><img src="image/iconos/industriales.gif" alt="industriales" class="tamIconos">
+                            <b><p class="rojo">INDUSTRIALES</p></b></a>
+                            <p>MONTACARGAS <br>
+                                PLATAFORMAS <br>
+                                CANASTILLA</p>
+                        </center>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                        <center>
+                            <a href="team.html"><img src="image/iconos/salud.gif" alt="salud" class="tamIconos">
+                            <b><p class="rojo">SERVICIOS DE SALUD</p></b></a>
+                            <p>MONTACAMILLAS <br>
+                                LABORATORIOS QUÍMICOS</p>
+                        </center>
+                    </div>
+                </div>
+                <!--NOSOTROS-->
+                <div class="">
+                    <div class="col-sm-12 col-md-12 col-xl-12 p-0">
+                        <div id="vincularse">
+                            <div class="contVY">
+                                <div class=" videoVinc">
+                                    <div class="" id="muteYouTubeVideoPlayer">
+                                        
+                                    </div>
+                                </div>
+                                <div class="ifovideoY">
+                                    <div class="table">
+                                        <div class="cel">
+                                            <p class="blanco text-left">NOSOTROS</p>
+                                            <p class="blanco text-left">Somos una empresa especializada en la fabricación y mantenimiento de elevadores de carga y de pasajeros, con más de 30 años de experiencia. Creada para satisfacer necesidades de movilidad vertical, siempre comprometidos con la calidad, seguridad y satisfacción que nuestros clientes pueden atestiguar.</p>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--CLIENTES-->
+
+                <div class="row">
+                    <b><p class="rojo tamh">ALGUNOS DE NUESTROS CLIENTES</p></b>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <center>              
+                            <a href="https://www.unam.mx/" target="_blank">
+                                <img src="image/logos/unam.jpg" alt="unam" class="tamC" >
+                            </a>               
+                       
+                            <a href="https://www.televisa.com/" target="_blank">
+                                <img src="image/logos/Televisa.jpg" alt="televisa" class="tamC" >
+                            </a>
+                            
+                            <a href="http://www.tvazteca.com/" target="_blank">
+                                <img src="image/logos/tvazteca.jpg" alt="tv azteca" class="tamC" >
+                            </a>
+                        
+                            <a href="https://www.fiestainn.com/" target="_blank">
+                                <img src="image/logos/fiesta.jpg" alt="fiestainn" class="tamC" >
+                            </a>
+
+                            <a href="https://sheraton.marriott.com/" target="_blank">
+                                <img src="image/logos/sheraton.jpg" alt="sheraton" class="tamC" >
+                            </a>
+                        
+                            <a href="https://www.mcdonalds.com.mx/" target="_blank">
+                                <img src="image/logos/McDonalds.jpg" alt="McDonalds" class="tamC" >
+                            </a>                      
+
+                            <a href="https://www.pizzahut.com.mx/" target="_blank">
+                                <img src="image/logos/pizza.jpg" alt="pizza" class="tamC" >
+                            </a>
+
+                            <a href="https://gillette.com.mx/es-mx" target="_blank">
+                                <img src="image/logos/gillete.jpg" alt="gillete" class="tamC" >
+                            </a>
+                        </center>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-<footer class="container-fluid bg-2 espacios2">
-    <div class="row">
-        <div class="col-md-6 col-xs-6 ">
-        	<h3 class="col-xs-12 col-md-12 blanco">DÓNDE ESTAMOS</h3>
-            <p class="col-xs-12 col-md-12 blanco">Nos encontramos en el centro de la Ciudad de México y damos servicio a toda la República Mexicana.</p>
+        <footer class="footerElevadores">
             
-        </div>
-        <div class="col-md-6 col-xs-6 ">
-            <button class="btn btn-danger ">Solicita tu cotización</button>
-        </div>
-    </div>
-</footer>
+        </footer>
 
+    	<!--scripts -->
+    	<script src="js/jquery-3.1.1.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
 
-	<!--scripts -->
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-</body>
-
+    </body>
 </html>
