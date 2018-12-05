@@ -65,7 +65,7 @@ function menu(){
 				</a>				
 			</div>
 			<div class="col-8 float p-0">
-				<nav class="navbar nav-bar-default p-0 center-cont">
+				<nav class="navbar nav-bar-default p-10 center-cont">
 					<div class="container-fluid p-0 center-elem">
 						<ul class="nav navbar-right nav-pills">
 							<li>
@@ -86,6 +86,11 @@ function menu(){
 							<li>
 								<a href="#" role="button" aria-haspopup="true" aria-expanded="false">
 									CLIENTES<span class="caret"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									CONTACTO<span class="caret"></span>
 								</a>
 							</li>						
 						</ul>
@@ -159,7 +164,7 @@ function menuMobile(){
 			<div class="clickMenu">
 				<div class="op">PRODUCTOS</div>
 				<div id="optsPro" class="optsMenu">
-					<a href="`+path+`progacademicos.html" >
+					<a href="`+path+`#" >
 						<div></div>
 					</a>					
 				</div>
@@ -167,21 +172,18 @@ function menuMobile(){
 			<div class="clickMenu">
 				<div class="op">SERVICIOS</div>
 				<div id="optsPro" class="optsMenu">
-					<div>
-						<a href="`+path+`eventosProximos.html" >
-							<div></div>
-						</a>
-					</div>					
+								
 				</div>
 			</div>
 			<div class="clickMenu">
 				<div class="op">CLIENTES</div>
 				<div id="optsPro" class="optsMenu">
-					<div>
-						<a href="`+path+`comnoticias.html" >
-							<div></div>
-						</a>
-					</div>
+					
+				</div>
+			</div>	
+			<div class="clickMenu">
+				<div class="op">CONTACTO</div>
+				<div id="optsPro" class="optsMenu">
 					
 				</div>
 			</div>			
@@ -198,7 +200,7 @@ function headerMobile(){
 	}
 	$('#header-mobile').append(`
 		<a href="index.html">
-			<img src="`+pathImg+`/logotipos/species.png" alt="SPECIES">
+			<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores">
 		</a>
 		<div id="nav-icon2">
 			<span></span>

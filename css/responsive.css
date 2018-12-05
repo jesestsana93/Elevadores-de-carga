@@ -24,7 +24,6 @@
   #header-mobile{
     width: 100%;
     background: #b81e2d;
-    /*background-image: url("../image/Pleca_menu.png");*/
     height: 80px;
     position: fixed;
     z-index: 999;
@@ -45,7 +44,7 @@
     width: 300px;
     height: 100vh;
     overflow: scroll;
-    background: #93C90E;
+    background: #b81e2d;
     z-index: 999;
     -webkit-transition: .55s all;
     -moz-transition: .55s all;
@@ -198,11 +197,11 @@
   .linksMenu{
     font-size: 15pt;
   }
-  .footerSPECIES{
+  .footerElevadores{
     margin-top: 210px;
   }
   .foot{
-    background-color: #5B6770;
+    background-color: #313332;
   }
   .tam2{
     width: 100%;

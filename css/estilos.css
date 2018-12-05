@@ -196,9 +196,6 @@ h1{
 .tamC{	
 	margin-left:30px;	
 }
-.tamS{
-	width: 727px;
-}
 .blanco{
 	color: white;
 }
@@ -210,6 +207,11 @@ h1{
 }
 .gris{
 	color: #313332;
+}
+.sombra{
+	background-color: #b81e2d;
+	font-size: 13pt;
+	padding-top: 70px;
 }
 p{
 	font-size: 12pt;
