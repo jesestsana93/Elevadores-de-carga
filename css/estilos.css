@@ -131,21 +131,11 @@ h1{
 .btn{
 	cursor: pointer;
 }
-#vincularse{
-	width: 100%;
-	padding-top:5px;
-}
-#vincularse .title{
-	height: auto;
-	width: 100%;
-	margin-bottom: 30px;
-}
+
 #vincularse .title img{
 	width: 100%;
 }
-#vincularse .title p{
-	color: white;
-}
+
 .contVY{
 	height: 306px;
 	width: 100%;
@@ -154,14 +144,14 @@ h1{
 	margin-bottom: 30px;
 }
 #vincularse .videoVinc{
-	height: 237px;
+	height: 306px;
 	/*background: #00a99d;*/
 	width: 49%;
 	float: left;
 }
 #vincularse .videoVinc iframe{
 	width: 100%;
-	height: 237px;
+	height: 306px;
 }
 #vincularse .ifovideoY{
 	width: 48%;
@@ -180,7 +170,10 @@ h1{
 	font-weight: bold;
 	font-size: 15pt;
 }
-
+#empresa{
+	padding-top:10px;
+	position:relative;
+}
 .image-responsive{
 	width: 100%;
 }
@@ -194,7 +187,16 @@ h1{
 	margin-bottom: 10px;
 }
 .tamC{	
-	margin-left:30px;	
+	margin-left:0px;	
+}
+.thumbnail .imgWrapper{
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+.caption{
+	height: 55px;
+    overflow: hidden;
 }
 .blanco{
 	color: white;
@@ -208,6 +210,12 @@ h1{
 .gris{
 	color: #313332;
 }
+
+.btn-lg.round {
+	border-radius: 24px;
+	margin-top: 40px;
+}
+
 .sombra{
 	background-color: #b81e2d;
 	font-size: 13pt;

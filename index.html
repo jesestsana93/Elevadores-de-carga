@@ -15,7 +15,7 @@
         <script type="text/javascript" src="js/script.js"></script>
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <header>
 
         </header>
@@ -76,77 +76,81 @@
                         </center>
                     </div>
                 </div>   
-
+                <br>
                 <!--SERVICIOS --> 
-                <div class="row">
-                    <div class="col-md-12">
                 
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h4>INSTALACIÓN</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4>MANTENIMIENTO</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="contact" aria-selected="false"><h4>REPARACIÓN</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h4>MODERNIZACIÓN</h4></a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> <br>
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-7 col-lg-7">
-                                        <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
-                                    </div>
-                                    <div class="col-sm-6 col-md-5 col-lg-5 sombra">
-                                        <p class="col-md-12 col-xs-12 blanco">INSTALACIÓN <br><br>
-                                            Fabricamos, importamos e instalamos <br> los equipos que más se adecuen a sus <br> necesidades de transporte vertical de <br>personas o mercancías.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-7 col-lg-7">
-                                        <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
-                                    </div>
-                                    <div class="col-sm-6 col-md-5 col-lg-5 sombra">
-                                        <p class="col-md-12 col-xs-12 blanco">MANTENIMIENTO <br><br>
-                                            Nuestros técnicos capacitados brindan el servicio de mantenimiento programado para prolongar la vida útil, asegurar el correcto funcionamiento de los equipos y la seguridad de los usuarios. Ofrecemos diferentes tipos de planes dependiendo de sus necesidades.</p>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div id="servicios">
+                            <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">SERVICIOS </p></b><br>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h4 class="rojo">INSTALACIÓN</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4 class="rojo">MANTENIMIENTO</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="contact" aria-selected="false"><h4 class="rojo">REPARACIÓN</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h4 class="rojo">MODERNIZACIÓN</h4></a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> <br>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-7 col-lg-7">
+                                            <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-5 sombra">
+                                            <p class="col-md-12 col-xs-12 blanco">INSTALACIÓN <br><br>
+                                                Fabricamos, importamos e instalamos <br> los equipos que más se adecuen a sus <br> necesidades de transporte vertical de <br>personas o mercancías.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-7 col-lg-7">
-                                        <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
-                                    </div>
-                                    <div class="col-sm-6 col-md-5 col-lg-5 sombra">
-                                        <p class="col-md-12 col-xs-12 blanco">REPARACIÓN<br><br>
-                                            A partir de un análisis, se reparan o cambian las piezas necesarias, tanto de nuestros equipos como de los instalados por otras compañías.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-7 col-lg-7">
-                                        <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
-                                    </div>
-                                    <div class="col-sm-6 col-md-5 col-lg-5 sombra">
-                                        <p class="col-md-12 col-xs-12 blanco">MODERNIZACIÓN<br><br>
-                                            Con el propósito de mejorar el funcionamiento, mantener la seguridad y el buen funcionamiento de los equipos, modernizamos o remplazamos partes eléctricas, mecánicas o de la cabina; con lo que se obtiene un mejor funcionamiento y se prolonga la vida útil.</p>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-7 col-lg-7">
+                                            <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-5 sombra">
+                                            <p class="col-md-12 col-xs-12 blanco">MANTENIMIENTO <br><br>
+                                                Nuestros técnicos capacitados brindan el servicio de mantenimiento programado para prolongar la vida útil, asegurar el correcto funcionamiento de los equipos y la seguridad de los usuarios. Ofrecemos diferentes tipos de planes dependiendo de sus necesidades.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-7 col-lg-7">
+                                            <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-5 sombra">
+                                            <p class="col-md-12 col-xs-12 blanco">REPARACIÓN<br><br>
+                                                A partir de un análisis, se reparan o cambian las piezas necesarias, tanto de nuestros equipos como de los instalados por otras compañías.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-7 col-lg-7">
+                                            <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-5 sombra">
+                                            <p class="col-md-12 col-xs-12 blanco">MODERNIZACIÓN<br><br>
+                                                Con el propósito de mejorar el funcionamiento, mantener la seguridad y el buen funcionamiento de los equipos, modernizamos o remplazamos partes eléctricas, mecánicas o de la cabina; con lo que se obtiene un mejor funcionamiento y se prolonga la vida útil.</p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--OFRECEMOS -->  
                 <br><br>
-                <div class="row">
+                <div id="productos" class="container-fluid">
+                    <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">OFRECEMOS Y DAMOS SERVICIOS A ELEVADORES</p></b> <br>
                     </div>
@@ -188,10 +192,12 @@
                                 LABORATORIOS QUÍMICOS</p>
                         </center>
                     </div>
+                    </div>
+
                 </div>
                 <br><br>
                 <!--NOSOTROS-->
-                <div class="">
+                <div id="empresa">
                     <div class="col-sm-12 col-md-12 col-xl-12 p-0">
                         <div id="vincularse">
                             <div class="contVY">
@@ -204,7 +210,7 @@
                                     <div class="table">
                                         <div class="cel">
                                             <p class="blanco text-left">NOSOTROS</p>
-                                            <p class="blanco text-left">Somos una empresa especializada en la fabricación y mantenimiento de elevadores de carga y de pasajeros, con más de 30 años de experiencia. Creada para satisfacer necesidades de movilidad vertical, siempre comprometidos con la calidad, seguridad y satisfacción que nuestros clientes pueden atestiguar.</p>
+                                            <h5 class="blanco text-left">Somos una empresa especializada en la fabricación y mantenimiento de elevadores de carga y de pasajeros, con más de 30 años de experiencia. Creada para satisfacer necesidades de movilidad vertical, siempre comprometidos con la calidad, seguridad y satisfacción que nuestros clientes pueden atestiguar.</h5>
                                         </div>
                                     </div>
                                 </div> 
@@ -213,7 +219,7 @@
                     </div>
                 </div>
                 <!--CLIENTES-->
-
+                <div id="clientes">
                 <div class="row">
                     
                     <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
@@ -241,7 +247,19 @@
                         
                             <a href="https://www.mcdonalds.com.mx/" target="_blank">
                                 <img src="image/logos/McDonalds.jpg" alt="McDonalds" class="tamC" >
-                            </a>                      
+                            </a>  
+
+                            <a href="http://www.burgerking.com.mx/" target="_blank">
+                                <img src="image/logos/burguer.jpg" alt="Burger king" class="tamC" >
+                            </a>
+
+                            <a href="https://www.elektra.com.mx/" target="_blank">
+                                <img src="image/logos/elektra.jpg" alt="elektra" class="tamC" >
+                            </a>  
+
+                            <a href="https://www.roche.com.mx/" target="_blank">
+                                <img src="image/logos/roche.jpg" alt="roche" class="tamC" >
+                            </a>                  
 
                             <a href="https://www.pizzahut.com.mx/" target="_blank">
                                 <img src="image/logos/pizza.jpg" alt="pizza" class="tamC" >
@@ -250,7 +268,8 @@
                             <a href="https://gillette.com.mx/es-mx" target="_blank">
                                 <img src="image/logos/gillete.jpg" alt="gillete" class="tamC" >
                             </a>
-                        </center>  
+                        </center> 
+                        </div> 
                     </div>
                 </div>
             </div>

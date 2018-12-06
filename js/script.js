@@ -69,27 +69,27 @@ function menu(){
 					<div class="container-fluid p-0 center-elem">
 						<ul class="nav navbar-right nav-pills">
 							<li>
-								<a href="#"  role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#empresa" role="button" aria-haspopup="true" aria-expanded="false">
 									EMPRESA<span class="caret"></span>
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="#productos" role="button" aria-haspopup="true" aria-expanded="false">
 									PRODUCTOS <span class="caret"></span>
 								</a>
 							</li>
 							<li>
-								<a href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#servicios" role="button" aria-haspopup="true" aria-expanded="false">
 									SERVICIOS<span class="caret"></span>
 								</a>
 							</li>	
 							<li>
-								<a href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#clientes" role="button" aria-haspopup="true" aria-expanded="false">
 									CLIENTES<span class="caret"></span>
 								</a>
 							</li>
 							<li>
-								<a href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#contacto" role="button" aria-haspopup="true" aria-expanded="false">
 									CONTACTO<span class="caret"></span>
 								</a>
 							</li>						
@@ -110,33 +110,38 @@ function footer(){
 	}
 	$('footer').append(`
 		<div class="container foot">
+		<div id="contacto">
 			<div class="row">
                	
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                     <br><br>
-                    	<h3 class="col-xs-12 col-md-12 blanco">DÓNDE ESTAMOS<hr color="blanco" width="60em"></h3>
+                    	<h3 class="col-xs-12 col-md-12 blanco">DÓNDE ESTAMOS</h3>
                         <p class="col-xs-12 col-md-12 blanco">Nos encontramos en el centro de la Ciudad de México <br> y damos servicio a toda la República Mexicana.</p>                        
                         
-						<center>
-                        	<p class="col-xs-12 col-md-12 blanco">+(55) 57 61 53 90  <br>
-                        	+(55) 55 88 56 74 </p>
-                        </center>
+                        <div class="thumbnail col-md-12 col-xs-12">
+	                        <img src="image/telefono.gif" alt="correo" height="40px" align="left">
+	                        <div class="caption">
+	                            <p class="col-md-12 col-xs-12 blanco">+(55) 57 61 53 90  <br>
+	                        	+(55) 55 88 56 74</p> 
+	                        </div>
+	                    </div>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6  col-lg-6">
-                    <br><br>
+                    <br>
                     	<center>
-                        	<a href="mailto:elevadoresdecarga@gmail.com" class="blanco" target="_blank"><button class="btn btn-danger" style='width:150px; height:35px'>Solicita tu cotización</button> <br>
+                        	<a href="mailto:elevadoresdecarga@gmail.com" class="blanco tamh" target="_blank"><button class="btn btn-danger btn-lg round tamh" >Solicita tu cotización</button> <br>
                         	 <br>
-                        	<img src="image/trans-mail.png" alt="correo">elevadoresdecarga@gmail.com</a>
+                        	<img src="image/trans-mail.png" alt="correo" height="35px">elevadoresdecarga@gmail.com</a>
                         </center>
                     </div>
                 </div>
-
+				<br>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 negro">
                 	<center>
 						<p class="blanco">Copyrights 2018, Diseño: Patricia Peña y Ricardo Alvarado</p>
 					</center>
                 </div>
+            </div>
             </div>
 		</div>
 	`);
@@ -155,7 +160,7 @@ function menuMobile(){
 				<div class="op">EMPRESA</div>
 				<div id="optsPro" class="optsMenu">
 					<div>
-						<a href="`+path+`#" >
+						<a href="`+path+`#empresa" >
 							<div></div>
 						</a>
 					</div>									
@@ -164,8 +169,8 @@ function menuMobile(){
 			<div class="clickMenu">
 				<div class="op">PRODUCTOS</div>
 				<div id="optsPro" class="optsMenu">
-					<a href="`+path+`#" >
-						<div></div>
+					<a href="`+path+`#productos" >
+						
 					</a>					
 				</div>
 			</div>
