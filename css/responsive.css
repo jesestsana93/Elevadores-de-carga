@@ -170,21 +170,6 @@
     -o-transition: .55s all;
     transition: .55s all;
   }
-  .optsMenu div{
-    width: 100%;
-    height: 30px;
-    color: white;
-    line-height: 40px;
-    font-weight: bold;
-    font-size: 18px;
-    border-bottom: 1px solid white;
-  }
-  /*.optsMenu div:last-child{
-    border: none;
-  }*/
-  #optsPro.open{
-    height: 10px;
-  }
   /*Banner*/
   #banner  .arrows{
     display: none;

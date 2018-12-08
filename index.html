@@ -7,7 +7,9 @@
     	<link rel="stylesheet" href="css/bootstrap.min.css">
     	<link rel="stylesheet" href="css/estilos.css">
         <link href="css/responsive.css" media="screen" rel="stylesheet" type="text/css">
-        
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/popper.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -53,52 +55,106 @@
                 <!--PRODUCTOS, SERVICIOS E INFORMES -->
                 <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <center>
-                            <a href="#"><img src="image/iconos/productos.gif" alt="productos" class="tamIconos" title="Nuestros equipos son <br>hidráulicos o de tracción,<br> con puertas automáticas o <br>manuales, una o varias <br> salidas.">
-                            <b><p class="rojo">PRODUCTOS</p></b></a>
-                            <p>Nuestros equipos son <br>hidráulicos o de tracción,<br> con puertas automáticas o <br>manuales, una o varias <br> salidas.</p>                
-                        </center>
+                        <center><a href="#"><img src="image/iconos/productos.gif" alt="productos" class="tamIconos"></center>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0 rojo">
+                                        <center>
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <b class="rojo tam1">PRODUCTOS</b> 
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <center>  
+                                        <p>Nuestros equipos son <br>hidráulicos o de tracción,<br> con puertas automáticas o <br>manuales, una o varias <br> salidas.</p>
+                                    </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                         <center>
                             <a href="#"><img src="image/iconos/servicios.gif" alt="servicios" class="tamIconos">
-                            <b><p class="rojo">SERVICIOS</p></b></a>
-                            <p>Ofrecemos los servicios de: <br> instalación, mantenimiento, <br> modernización, reparación <br> y desmontaje.</p>
                         </center>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0 rojo">
+                                        <center>
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <b class="rojo tam1">SERVICIOS</b> 
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <center>  
+                                        <p>Ofrecemos los servicios de: <br> instalación, mantenimiento, <br> modernización, reparación <br> y desmontaje.</p>
+                                    </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                         <center>
                             <a href="#"><img src="image/iconos/informes.gif" alt="informes" class="tamIconos">
-                            <b><p class="rojo">INFORMES</p></b></a>
-                            <p>Comuníquese con nosotros <br> y con gusto lo asesoramos <br> a encontrar la solución a <br> sus necesidades y <br>presupuesto.</p>
                         </center>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0 rojo">
+                                        <center>
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <b class="rojo tam1">INFORMES</b> 
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <center>  
+                                        <p>Comuníquese con nosotros <br> y con gusto lo asesoramos <br> a encontrar la solución a <br> sus necesidades y <br>presupuesto.</p>
+                                    </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>   
-                <br>
+                
+                <br><br>
                 <!--SERVICIOS --> 
                 <div id="servicios">
                     <div class="row">
-                        <div class="col-md-12">
-                        
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">                        
                             <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">SERVICIOS </p></b><br>
+
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h4 class="rojo">INSTALACIÓN</h4></a>
+                                    <a class="nav-link active " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h4 class="blanco text-center">INSTALACIÓN</h4></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4 class="rojo">MANTENIMIENTO</h4></a>
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4 class="blanco text-center">MANTENIMIENTO</h4></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="contact" aria-selected="false"><h4 class="rojo">REPARACIÓN</h4></a>
+                                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false"><h4 class="blanco text-center">REPARACIÓN</h4></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h4 class="rojo">MODERNIZACIÓN</h4></a>
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h4 class="blanco text-center">MODERNIZACIÓN</h4></a>
                                 </li>
                             </ul>
+
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> <br>
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
                                     <div class="row">
                                         <div class="col-sm-6 col-md-7 col-lg-7">
                                             <img src="image/servicios.gif" alt="servicios" width="627px" height="321px"> 
@@ -149,7 +205,7 @@
 
                 <!--OFRECEMOS -->  
                 <br><br>
-                <div id="productos" class="container-fluid">
+                <div id="productos" class="cont">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">OFRECEMOS Y DAMOS SERVICIOS A ELEVADORES</p></b> <br>
@@ -217,61 +273,73 @@
                         </div>
                     </div>
                 </div>
-                <!--CLIENTES-->
-                <div id="clientes">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
-                            <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">ALGUNOS DE NUESTROS CLIENTES</p></b>
-                            <center>              
-                                <a href="https://www.unam.mx/" target="_blank">
-                                    <img src="image/logos/unam.jpg" alt="unam" class="tamC" >
-                                </a>               
-                           
-                                <a href="https://www.televisa.com/" target="_blank">
-                                    <img src="image/logos/Televisa.jpg" alt="televisa" class="tamC" >
-                                </a>
-                                
-                                <a href="http://www.tvazteca.com/" target="_blank">
-                                    <img src="image/logos/tvazteca.jpg" alt="tv azteca" class="tamC" >
-                                </a>
-                            
-                                <a href="https://www.fiestainn.com/" target="_blank">
-                                    <img src="image/logos/fiesta.jpg" alt="fiestainn" class="tamC" >
-                                </a>
 
-                                <a href="https://sheraton.marriott.com/" target="_blank">
-                                    <img src="image/logos/sheraton.jpg" alt="sheraton" class="tamC" >
-                                </a>
-                            
-                                <a href="https://www.mcdonalds.com.mx/" target="_blank">
-                                    <img src="image/logos/McDonalds.jpg" alt="McDonalds" class="tamC" >
-                                </a>  
-
-                                <a href="https://www.pizzahut.com.mx/" target="_blank">
-                                    <img src="image/logos/pizza.jpg" alt="pizza" class="tamC" >
-                                </a>
-
-                                <a href="https://gillette.com.mx/es-mx" target="_blank">
-                                    <img src="image/logos/gillete.jpg" alt="gillete" class="tamC" >
-                                </a>
-
-                                <a href="http://www.burgerking.com.mx/" target="_blank">
-                                    <img src="image/logos/burguer.jpg" alt="Burger king" class="tamC" >
-                                </a>
-
-                                <a href="https://www.elektra.com.mx/" target="_blank">
-                                    <img src="image/logos/elektra.jpg" alt="elektra" class="tamC" >
-                                </a>  
-
-                                <a href="https://www.roche.com.mx/" target="_blank">
-                                    <img src="image/logos/roche.jpg" alt="roche" class="tamC" >
-                                </a>  
-                            </center> 
-                        </div> 
+                <!--CLIENTES--> 
+                <div class="cont">               
+                    <div id="noticias">
+                        <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">ALGUNOS DE NUESTROS CLIENTES</p></b>
+                        
+                        <div class="sliderNoticias">
+                            <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/unam.jpg" alt="unam" class="image-responsive">
+                                </div>
+                            </div>
+                            <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/Televisa.jpg" alt="televisa" >
+                                </div>
+                            </div>
+                            <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/tvazteca.jpg" alt="tv azteca">
+                                </div>
+                            </div>
+                            <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/fiesta.jpg" alt="fiestainn"> 
+                                </div>
+                            </div>
+                            <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/sheraton.jpg" alt="sheraton" >
+                                </div>
+                            </div>
+                            <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/McDonalds.jpg" alt="McDonalds" >
+                                </div>
+                            </div>
+                             <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/pizza.jpg" alt="pizza" >
+                                </div>
+                            </div>
+                             <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/gillete.jpg" alt="gillete">
+                                </div>
+                            </div>
+                             <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/burguer.jpg" alt="Burger king" >
+                                </div>
+                            </div>
+                             <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/elektra.jpg" alt="elektra">
+                                </div>
+                            </div>
+                             <div class=" bkgndNoticia">
+                                <div>
+                                    <img src="image/logos/roche.jpg" alt="roche" >
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
 
         <div id="contacto">
             <footer class="footerElevadores">
@@ -311,5 +379,31 @@
     	<script src="js/jquery-3.1.1.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.sliderNoticias').slick({
+                    dots: false,
+                    infinite: true,
+                    speed:100,
+                    arrows: true,
+                    slidesToShow: 8,
+                    slidesToScroll: 1,
+                    appendArrows: $(".arrowsNoticias"),
+                    prevArrow: '<img class="prev" src="">',
+                    nextArrow: '<img class="next" src="">',
+                    responsive:[
+                        {
+                        breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                infinite: true,
+                                dots: false
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
     </body>
 </html>
