@@ -17,7 +17,8 @@
         <script type="text/javascript" src="js/script.js"></script>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body>
+        
         <header>
             
         </header>
@@ -25,8 +26,10 @@
         <div id="header-mobile" class="mobile">
 
         </div>
-    
-        <div class="cont top">
+        
+            
+            <!--BANNER-->
+            <div class="cont top">
             <div id="menu-mobile" class="mobile">
             </div>
 
@@ -41,17 +44,21 @@
                         <div class="arrows">
                             <img class="next" src="image/arrow.png" alt="siguiente" onClick="gtag('event', 'index', { 'event_category': 'banner', 'event_action':'click','event_label':'siguiente'});">
                         </div-->
+                        
                         <div class="hidden-arrows" style="display: none;"></div>
                         <div class="sliderBanner">
                             <div class=" slider">
                                 <img src="image/elevador.png" alt="elevador" class="image-responsive">
                             </div>
+                            <!--<div class=" slider">
+                                <img src="image/elevador.png" alt="elevador" class="image-responsive">
+                            </div>-->
                         </div>
                     </div>
                 </div>
 
                 <br><br>
-
+            
                 <!--PRODUCTOS, SERVICIOS E INFORMES -->
                 <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
@@ -110,16 +117,16 @@
                         </center>
                         <div id="accordion">
                             <div class="card">
-                                <div class="card-header" id="headingTwo">
+                                <div class="card-header" id="headingThree">
                                     <h5 class="mb-0 rojo">
                                         <center>
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                 <b class="rojo tam1">INFORMES</b> 
                                             </button>
                                         </center>
                                     </h5>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                     <div class="card-body">
                                         <center>  
                                         <p>Comuníquese con nosotros <br> y con gusto lo asesoramos <br> a encontrar la solución a <br> sus necesidades y <br>presupuesto.</p>
@@ -129,11 +136,10 @@
                             </div>
                         </div>
                     </div>
-                </div>   
+                </div>                   
                 
-                <br><br>
                 <!--SERVICIOS --> 
-                <div id="servicios">
+                <section class="container section" id="servicios">
                     <div class="row">
                         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">                        
                             <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">SERVICIOS </p></b><br>
@@ -202,10 +208,11 @@
                         </div>
                     </div>
                 </div>
+                </section>
 
                 <!--OFRECEMOS -->  
-                <br><br>
-                <div id="productos" class="cont">
+                
+                <section class="container section" id="productos">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">OFRECEMOS Y DAMOS SERVICIOS A ELEVADORES</p></b> <br>
@@ -249,10 +256,10 @@
                             </center>
                         </div>
                     </div>
-                </div>
-                <br><br>
+                </section>
+                
                 <!--NOSOTROS-->
-                <div id="empresa">
+                <section class="container section" id="empresa">
                     <div class="col-sm-12 col-md-12 col-xl-12 p-0">
                         <div id="vincularse">
                             <div class="contVY">
@@ -272,11 +279,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!--CLIENTES--> 
-                <div class="cont">               
-                    <div id="noticias">
+                <section class="container section" id="clientes">
                         <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">ALGUNOS DE NUESTROS CLIENTES</p></b>
                         
                         <div class="sliderNoticias">
@@ -336,8 +342,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+                
             </div>
         </div>
 
@@ -381,6 +387,25 @@
 
         <script type="text/javascript">
             $(document).ready(function(){
+                $('.sliderBanner').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 300,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    appendArrows: $(".hidden-arrows"),
+                    prevArrow: '<img class="prev" src="image/arrow.png">',
+                    nextArrow: '<img class="next" src="image/arrow.png">',
+                });
+                $(".arrows > .next").on("click", function(){
+                    $(".hidden-arrows > .next").click()
+                });
+                $(".arrows > .prev").on("click", function(){
+                    $(".hidden-arrows > .prev").click()
+                });
                 $('.sliderNoticias').slick({
                     dots: false,
                     infinite: true,
@@ -405,5 +430,6 @@
                 });
             });
         </script>
+
     </body>
 </html>

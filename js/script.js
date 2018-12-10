@@ -61,7 +61,7 @@ function menu(){
 		<div class="cont">
 			<div class="col-4 float p-0">
 				<a href="index.html">
-					<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores" class="">
+					<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores" class="image-responsive3">
 				</a>				
 			</div>
 			<div class="col-8 float p-0">
@@ -69,27 +69,27 @@ function menu(){
 					<div class="container-fluid p-0 center-elem">
 						<ul class="nav navbar-right nav-pills">
 							<li>
-								<a href="#empresa" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#empresa" class="scroll" role="button" aria-haspopup="true" aria-expanded="false">
 									EMPRESA<span class="caret"></span>
 								</a>
 							</li>
 							<li>
-								<a href="#productos" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#productos" class="scroll" role="button" aria-haspopup="true" aria-expanded="false">
 									PRODUCTOS <span class="caret"></span>
 								</a>
 							</li>
 							<li>
-								<a href="#servicios" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#servicios" class="scroll" role="button" aria-haspopup="true" aria-expanded="false">
 									SERVICIOS<span class="caret"></span>
 								</a>
 							</li>	
 							<li>
-								<a href="#clientes" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#clientes" class="scroll" role="button" aria-haspopup="true" aria-expanded="false">
 									CLIENTES<span class="caret"></span>
 								</a>
 							</li>
 							<li>
-								<a href="#contacto" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#contacto" class="scroll" role="button" aria-haspopup="true" aria-expanded="false">
 									CONTACTO<span class="caret"></span>
 								</a>
 							</li>						

@@ -45,6 +45,15 @@ header div nav a{
 	color: white;
 	padding-left: 9px;
 }
+.image-responsive3{
+	width: 35%;
+	padding-top: 100px;
+}
+
+.section{
+  padding: 60px 0;
+}
+
 .open-submenu:hover ul.submenu{
 	display: block;
     top: -24px;
@@ -75,6 +84,10 @@ h1{
 .top{
 	position: relative;
 	top: 70px;
+}
+.carousel{
+	position: relative;
+	margin-bottom: 50px;
 }
 /*Banner*/
 #banner{
@@ -154,7 +167,7 @@ h1{
 	height: 306px;
 }
 #vincularse .ifovideoY{
-	width: 48%;
+	width: 50%;
 	height: 306px;
 	float: left;
 }
