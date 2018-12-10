@@ -61,7 +61,7 @@ function menu(){
 		<div class="cont">
 			<div class="col-4 float p-0">
 				<a href="index.html">
-					<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores" class="image-responsive3">
+					<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores">
 				</a>				
 			</div>
 			<div class="col-8 float p-0">

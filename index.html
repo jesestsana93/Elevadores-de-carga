@@ -143,22 +143,22 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">                        
                             <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">SERVICIOS </p></b><br>
-
+                            <!--PESTAÑAS DE NAVEGACION PARA SERVICIOS-->
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h4 class="blanco text-center">INSTALACIÓN</h4></a>
+                                    <a class="nav-link active " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h4 class="rojo text-center">INSTALACIÓN</h4></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4 class="blanco text-center">MANTENIMIENTO</h4></a>
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4 class="rojo text-center">MANTENIMIENTO</h4></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false"><h4 class="blanco text-center">REPARACIÓN</h4></a>
+                                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false"><h4 class="rojo text-center">REPARACIÓN</h4></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h4 class="blanco text-center">MODERNIZACIÓN</h4></a>
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h4 class="rojo text-center">MODERNIZACIÓN</h4></a>
                                 </li>
                             </ul>
-
+                            <!--CONTENIDO QUE CAMBIA DE ACUERDO A LA PESTAÑA-->
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
                                     <div class="row">
@@ -282,61 +282,62 @@
                 </section>
 
                 <!--CLIENTES--> 
-                <section class="container section" id="clientes">
+                
+                    <section class="container section" id="clientes">    
                         <b><p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rojo tamh">ALGUNOS DE NUESTROS CLIENTES</p></b>
                         
-                        <div class="sliderNoticias">
-                            <div class=" bkgndNoticia">
+                        <div class="sliderClientes">
+                            <div class=" bkgndClientes">
                                 <div>
-                                    <img src="image/logos/unam.jpg" alt="unam" class="image-responsive">
+                                    <img src="image/logos/unam.jpg" alt="unam">
                                 </div>
                             </div>
-                            <div class=" bkgndNoticia">
+                            <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/Televisa.jpg" alt="televisa" >
                                 </div>
                             </div>
-                            <div class=" bkgndNoticia">
+                            <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/tvazteca.jpg" alt="tv azteca">
                                 </div>
                             </div>
-                            <div class=" bkgndNoticia">
+                            <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/fiesta.jpg" alt="fiestainn"> 
                                 </div>
                             </div>
-                            <div class=" bkgndNoticia">
+                            <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/sheraton.jpg" alt="sheraton" >
                                 </div>
                             </div>
-                            <div class=" bkgndNoticia">
+                            <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/McDonalds.jpg" alt="McDonalds" >
                                 </div>
                             </div>
-                             <div class=" bkgndNoticia">
+                             <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/pizza.jpg" alt="pizza" >
                                 </div>
                             </div>
-                             <div class=" bkgndNoticia">
+                             <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/gillete.jpg" alt="gillete">
                                 </div>
                             </div>
-                             <div class=" bkgndNoticia">
+                             <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/burguer.jpg" alt="Burger king" >
                                 </div>
                             </div>
-                             <div class=" bkgndNoticia">
+                             <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/elektra.jpg" alt="elektra">
                                 </div>
                             </div>
-                             <div class=" bkgndNoticia">
+                             <div class=" bkgndClientes">
                                 <div>
                                     <img src="image/logos/roche.jpg" alt="roche" >
                                 </div>
@@ -406,14 +407,16 @@
                 $(".arrows > .prev").on("click", function(){
                     $(".hidden-arrows > .prev").click()
                 });
-                $('.sliderNoticias').slick({
+                $('.sliderClientes').slick({
                     dots: false,
                     infinite: true,
-                    speed:100,
+                    speed:300,
                     arrows: true,
                     slidesToShow: 8,
                     slidesToScroll: 1,
-                    appendArrows: $(".arrowsNoticias"),
+                    autoplay: true,
+                    autoplaySpeed: 500,
+                    appendArrows: $(".arrowsClientes"),
                     prevArrow: '<img class="prev" src="">',
                     nextArrow: '<img class="next" src="">',
                     responsive:[

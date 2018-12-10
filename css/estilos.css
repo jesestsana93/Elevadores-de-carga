@@ -51,7 +51,7 @@ header div nav a{
 }
 
 .section{
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .open-submenu:hover ul.submenu{
@@ -229,27 +229,24 @@ h1{
 	font-size: 13pt;
 	padding-top: 70px;
 }
-#noticias{
+#clientes{
 	width: 100%;
 	position: relative;
 	padding: 20px 50px 0;
 	margin-bottom: 20px;
 	margin-top: 0px;
 }
-#noticias h1{
-	color: black;
-}
-#noticias .sliderNoticias{
+ #clientes .sliderClientes{
 	width: 100%;
 	margin-top: 10px;
 }
-#noticias .bkgndNoticia{
+#clientes .bkgndClientes{
 	height: 50px;
 	background-size: cover;
 	margin: 0 10px;
 	display: table;
 }
-#noticias .bkgndNoticia div{
+#clientes .bkgndClientes div{
 	color: white;
 	font-weight: bold;
 	font-size: 25px;
@@ -258,7 +255,7 @@ h1{
 	display: table-cell;
     vertical-align: middle;
 }
-.bkgndNoticia img{
+.bkgndClientes img{
 	width: 100%;
 }
 p{
@@ -279,14 +276,7 @@ p{
 /* CSS used here will be applied after bootstrap.css */
 
 
-.nav-link{
-	background-color: #b81e2d;
-	color:white;
-	margin-right: 40px;
-	width: 200px;
-	
-	border-bottom-color: #b81e2d;
-}
+
 .redondeado{
 	background-color: white;
 	border-top-radius:50px;
