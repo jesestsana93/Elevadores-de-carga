@@ -157,19 +157,7 @@
     left: calc(50% - 5px);
     top: 20px;
   }
-  /*submenus*/
-  .optsMenu{
-    width: 250px;
-    margin: auto;
-    text-align: center;
-    background: #93C90E;
-    height: 0px;
-    overflow: hidden;
-    -webkit-transition: .55s all;
-    -moz-transition: .55s all;
-    -o-transition: .55s all;
-    transition: .55s all;
-  }
+  
   /*Banner*/
   #banner  .arrows{
     display: none;

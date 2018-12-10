@@ -59,12 +59,7 @@ function menu(){
 	}
 	$('header').append(`
 		<div class="cont">
-			<div class="col-4 float p-0">
-				<a href="index.html">
-					<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores">
-				</a>				
-			</div>
-			<div class="col-8 float p-0">
+			<div class="col-12 float p-0">
 				<nav class="navbar nav-bar-default p-10 center-cont">
 					<div class="container-fluid p-0 center-elem">
 						<ul class="nav navbar-right nav-pills">
@@ -97,6 +92,11 @@ function menu(){
 					</div>
 				</nav>
 			</div>
+			<div class="col-4 float p-0">
+				<a href="index.html">
+					<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores" class="image-responsive2">
+				</a>				
+			</div>
 		</div>
 	`)
 };
@@ -123,39 +123,28 @@ function menuMobile(){
 	$('#menu-mobile').append(`
 		<div class="cont-menu">			
 			<div class="clickMenu">
-				<div class="op">EMPRESA</div>
-				<div id="optsPro" class="optsMenu">
-					<div>
-						<a href="`+path+`#empresa" >
-							<div></div>
-						</a>
-					</div>									
+				<div class="op">
+					<a href="#empresa" class="blanco tamh">EMPRESA</a>
 				</div>
 			</div>
 			<div class="clickMenu">
-				<div class="op">PRODUCTOS</div>
-				<div id="optsPro" class="optsMenu">
-					<a href="`+path+`#productos" >
-						
-					</a>					
+				<div class="op">
+					<a href="#productos" class="blanco tamh">PRODUCTOS</a>
 				</div>
 			</div>
 			<div class="clickMenu">
-				<div class="op">SERVICIOS</div>
-				<div id="optsPro" class="optsMenu">
-								
+				<div class="op">
+					<a href="#servicios" class="blanco tamh">SERVICIOS</a>
 				</div>
 			</div>
 			<div class="clickMenu">
-				<div class="op">CLIENTES</div>
-				<div id="optsPro" class="optsMenu">
-					
+				<div class="op">
+					<a href="#clientes" class="blanco tamh">CLIENTES</a>
 				</div>
 			</div>	
 			<div class="clickMenu">
-				<div class="op">CONTACTO</div>
-				<div id="optsPro" class="optsMenu">
-					
+				<div class="op">
+					<a href="#contacto" class="blanco tamh">CONTACTO</a>
 				</div>
 			</div>			
 		</div>
@@ -171,7 +160,7 @@ function headerMobile(){
 	}
 	$('#header-mobile').append(`
 		<a href="index.html">
-			<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores">
+			<img src="`+pathImg+`/logos/logo_elevadores.png" alt="logoElevadores" class="image-responsive2">
 		</a>
 		<div id="nav-icon2">
 			<span></span>
